@@ -1,0 +1,12 @@
+{
+  "widget": {
+    "name": "Funcionalidades",
+    "description":"Conjunto de funcionalidades de automações para o sistema relacionadas á atividade de leads.",
+    "short_description": "Conjunto de funcionalidades"
+  },
+  "settings": {
+    "api_token": "Token de acesso",
+    "login": "Usuario da conta"
+    
+  }
+}

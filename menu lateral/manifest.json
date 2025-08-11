@@ -1,0 +1,15 @@
+{
+  "widget": {
+    "name": "widget.name",
+    "description": "widget.description",
+    "short_description": "widget.short_description",
+    "code": "menu_lateral_widget",
+    "version": "1.2.21",
+    "installation": true,
+    "locale": ["pt"]
+  },
+ "locations": ["everywhere"],
+  
+  "settings": { "title": "settings.title" }
+   
+}
