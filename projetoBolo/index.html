@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Funcionalidades Avançadas</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card-header h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+      margin: 0;
+    }
+
+    .card-description {
+      color: #777;
+      font-size: 14px;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    .md-switch {
+      position: relative;
+      display: inline-block;
+      width: 36px;
+      height: 20px;
+    }
+
+    .md-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .md-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: 0.2s;
+      border-radius: 34px;
+    }
+
+    .md-slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      border-radius: 50%;
+      transition: 0.2s;
+    }
+
+    input:checked + .md-slider {
+      background-color: #3b82f6;
+    }
+
+    input:checked + .md-slider:before {
+      transform: translateX(16px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Funcionalidade 1 -->
+  <section class="card">
+    <div class="card-header">
+      <h3>Funcionalidade Bolo</h3>
+      <label class="md-switch">
+        <input type="checkbox" id="toggle_bolo">
+        <span class="md-slider"></span>
+      </label>
+    </div>
+    <p class="card-description">
+      A funcionalidade "Bolo", ao ser ativada, move automaticamente os leads que não compareceram à visita agendada (sem justificativa) para a etapa "Bolo" no funil, e atribui a eles uma tarefa de acompanhamento.
+    </p>
+  </section>
+
+  <!-- Funcionalidade 2 -->
+  <section class="card">
+    <div class="card-header">
+      <h3>Atualização de data e hora da entrevista</h3>
+      <label class="md-switch">
+        <input type="checkbox" id="toggle_entrevista">
+        <span class="md-slider"></span>
+      </label>
+    </div>
+    <p class="card-description">
+      Quando ativada, essa funcionalidade verifica os leads que tiveram entrevista marcada. Ao confirmar que a entrevista foi realizada conforme previsto, a automação atualiza automaticamente o campo "data da entrevista realizada" com a informação obtida no momento do comparecimento do cliente.
+    </p>
+  </section>
+
+  <!-- Funcionalidade 3 -->
+  <section class="card">
+    <div class="card-header">
+      <h3>Criar tarefa para novos leads</h3>
+      <label class="md-switch">
+        <input type="checkbox" id="toggle_novos_leads">
+        <span class="md-slider"></span>
+      </label>
+    </div>
+    <p class="card-description">
+      Essa funcionalidade cria automaticamente uma tarefa de primeiro contato ou acompanhamento para todo novo lead criado na conta, garantindo que nenhum lead fique sem abordagem inicial.
+    </p>
+  </section>
+
+</body>
+</html>

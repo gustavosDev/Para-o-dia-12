@@ -1,0 +1,22 @@
+{
+  "widget": {
+  "name": "Widget Bolo",
+  "description":"Widget que move leads que não compareceram à visita para etapa de bolo",
+  "short_description": "Automação para leads que deram bolo",
+   "tour_description":"Identifique e gerencie automaticamente leads inativos que não compareceram à alguma visita agendada"
+  },
+
+     "settings":{
+        "login":"Nome de usuário",
+        "api_key":"Chave API",
+        "account":"Conta"
+    },
+
+ "advanced": {
+  "title": "Funcionalidades"
+ }
+
+  }
+  
+
+  
