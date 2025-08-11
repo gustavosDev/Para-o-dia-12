@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Configurações Avançadas - Automação Bolo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .field {
+      margin-bottom: 15px;
+    }
+    .field label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .field input[type="text"],
+    .field select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .btn-save {
+      padding: 10px 20px;
+      background-color: #2b84e0;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-save:hover {
+      background-color: #236bbd;
+    }
+  </style>
+</head>
+<body>
+  <h2>Cooonfigurações Avançadasssss</h2>
+
+  <div class="field">
+    <label for="campo1">Opção especial</label>
+    <input type="text" id="campo1" placeholder="Digite algo...">
+  </div>
+
+  <div class="field">
+    <label for="pipeline">Selecione o Funil</label>
+    <select id="pipeline">
+      <option value="">-- Selecione --</option>
+      <option value="1">Funil 1</option>
+      <option value="2">Funil 2</option>
+    </select>
+  </div>
+
+  <button class="btn-save" id="btnSave">Salvar</button>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#btnSave').on('click', function() {
+        const settings = {
+          campo1: $('#campo1').val(),
+          pipeline: $('#pipeline').val()
+        };
+
+        console.log('Configurações avançadas salvas:', settings);
+
+        // Aqui você pode enviar para o backend, ou usar postMessage para comunicar com o widget principal
+        alert('Configurações salvas!');
+      });
+    });
+  </script>
+</body>
+</html>

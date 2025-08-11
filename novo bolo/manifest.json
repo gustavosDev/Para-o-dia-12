@@ -1,0 +1,17 @@
+{
+  "widget": {
+    "name": "widget.name",
+    "description": "widget.description",
+    "short_description": "widget.short_description",
+    "version": "1.2.21",
+    "installation": true,
+    "locale": ["pt"]
+  },
+  "settings": {
+   
+  },
+  "advanced": {
+    "title": "advanced.title"
+  },
+  "locations": ["advanced_settings"]
+}
