@@ -1,0 +1,12 @@
+{
+  "widget.name": "TesteHtml",
+  "widget.description": "Conjunto de funcionalidades de automações para o sistema relacionadas à atividade de leads.",
+  "widget.short_description": "Conjunto de funcionalidades",
+
+  "settings.api_token": "Token de acesso",
+  "settings.login": "Usuário da conta",
+
+  "advanced.title": "InjecTest"
+  
+
+}

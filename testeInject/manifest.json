@@ -1,0 +1,25 @@
+{
+  "widget": {
+    "name": "widget.name",
+    "description": "widget.description",
+    "short_description": "widget.short_description",
+    "version": "1.2.22",
+    "installation": true,
+    "locale": ["pt"]
+  },
+  "advanced": { "title": "advanced.title" },
+  "locations": ["advanced_settings"],
+
+"settings": {
+  "api_token": {
+    "name": "settings.api_token",
+    "type": "text",
+    "required": true
+  },
+  "login": {
+    "name": "settings.login",
+    "type": "text",
+    "required": true
+  }
+}
+}
