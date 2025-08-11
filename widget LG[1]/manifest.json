@@ -1,0 +1,36 @@
+{
+  "widget": {
+    "name": "widget.name",
+    "description": "widget.description",
+    "short_description": "widget.short_description",
+    "version": "1.0.0",
+    "interface_version": 2,
+    "init_once": false,
+    "author": "Gustavo Alves",
+    "locale": ["pt", "en", "es"],
+    "installation": true
+  },
+  "locations": {
+    "settings": {},
+    "ccard-1": {},
+    "lcard-1": {}
+  },
+  "settings": {
+    "login": {
+      "name": "settings.login",
+      "type": "text",
+      "required": true
+    },
+    "api_key": {
+      "name": "settings.api_key",
+      "type": "text",
+      "required": true
+    },
+    "account": {
+      "name": "settings.account",
+      "type": "text",
+      "required": true
+    }
+  }
+}
+
